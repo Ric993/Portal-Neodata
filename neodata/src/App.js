@@ -10,7 +10,7 @@ import EmployeePortal from './pages/EmployeePortal';
 import NotFound from './pages/NotFound';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import "../src/styles/global.css"
+import "./styles/global.css"
 
 export default function App() {
   return (

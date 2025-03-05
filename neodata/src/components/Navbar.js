@@ -1,9 +1,15 @@
 import { Link } from 'react-router-dom';
-import "../styles/Navbar.css"
+import logo from '../assets/neodata.png'; // Importa a logo
+import '../styles/Navbar.css'; // Importa os estilos da navbar
 
 export default function Navbar() {
   return (
     <nav>
+      {/* Adicionando a logo */}
+      <Link to="/">
+        <img src={logo} alt="NeoData Solutions" className="logo" />
+      </Link>
+
       <ul>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">Sobre Nós</Link></li>

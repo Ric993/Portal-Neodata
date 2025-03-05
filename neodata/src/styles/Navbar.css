@@ -1,25 +1,31 @@
-/* Navbar.css */
+/* Estiliza a navbar */
 nav {
-    background-color: #333;
-    padding: 10px 20px;
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  nav ul li {
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    color: white;
-    font-weight: bold;
-    font-size: 1rem;
-  }
-  
-  nav ul li a:hover {
-    color: #007bff;
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 10px 20px;
+}
+
+.logo {
+  height: 100px; /* Ajuste o tamanho da logo conforme necessário */
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #007bff;
+}
