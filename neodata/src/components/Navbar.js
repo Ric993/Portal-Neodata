@@ -7,7 +7,7 @@ export default function Navbar() {
     <nav>
       {/* Adicionando a logo */}
       <Link to="/">
-        <img src={logo} alt="NeoData Solutions" className="logo" />
+        <img src={logo} alt="NeoData Solutions" className="logo" id="logo"/>
       </Link>
 
       <ul>
@@ -18,7 +18,7 @@ export default function Navbar() {
         <li><Link to="/blog">Blog</Link></li>
         <li><Link to="/contact">Contato</Link></li>
         <li><Link to="/client-portal">Portal do Cliente</Link></li>
-        <li><Link to="/employee-portal">Portal do Funcionário</Link></li>
+        {/*<li><Link to="/employee-portal">Portal do Funcionário</Link></li>*/}
       </ul>
     </nav>
   );

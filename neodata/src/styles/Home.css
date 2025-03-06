@@ -1,6 +1,7 @@
 /* Home.css */
 section {
     text-align: center;
+    width: 50vw;
   }
   
   h1 {
@@ -11,6 +12,11 @@ section {
     margin-top: 20px;
   }
   
-  img{
-    height: 20vh;
+  .carrossel img{
+    max-width: 40vw;
+    height: 200px;
+  }
+
+  .carousel img{
+    width: 37vw;
   }

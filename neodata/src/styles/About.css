@@ -7,4 +7,23 @@ section {
   h2 {
     color: #007bff;
   }
-  
+ 
+  .employee-photo {
+    width: 100%;
+    max-width: 200px; /* ajuste conforme necessário */
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.employee {
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
