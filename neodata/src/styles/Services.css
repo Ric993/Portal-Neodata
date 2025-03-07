@@ -1,32 +1,40 @@
-section{
+section {
   margin-top: 10%;
 }
 
-section ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  align-items: center; /* Alinha os itens verticalmente se necessário */
 }
 
-section li {
-    padding: 15px;
-    background-color: #f4f4f4;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.service-item {
+  padding: 15px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: calc(50% - 20px); /* 2 itens por linha */
+  box-sizing: border-box; /* Evita que o padding afete a largura */
+  text-align: center; /* Centraliza o conteúdo dentro do item */
 }
 
-li{
-    text-decoration: none;
+.service-item p {
+  display: none;
 }
 
-li:hover{
-    cursor: pointer;
-    color: #007bff;
+.service-item.active p {
+  display: block; /* Exibe a descrição do serviço ativo */
 }
 
-/* Responsividade */
+.service-item:hover {
+  cursor: pointer;
+  color: #007bff;
+}
+
 @media (max-width: 768px) {
-  section ul {
-    grid-template-columns: 1fr; /* Em telas menores, use uma coluna */
+  .service-item {
+    width: 100%; /* Um item por linha em telas pequenas */
   }
 }

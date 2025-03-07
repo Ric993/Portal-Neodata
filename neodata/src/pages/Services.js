@@ -18,14 +18,18 @@ export default function Services() {
   return (
     <section>
       <h1>Nossos Serviços</h1>
-      <ul>
+      <div className="services-container">
         {services.map((service, index) => (
-          <li key={index} onClick={() => handleToggle(index)} className={activeService === index ? 'active' : ''}>
+          <div 
+            key={index} 
+            onClick={() => handleToggle(index)} 
+            className={`service-item ${activeService === index ? 'active' : ''}`}
+          >
             <strong>{service.title}</strong>
             {activeService === index && <p>{service.description}</p>}
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
     </section>
   );
 }
