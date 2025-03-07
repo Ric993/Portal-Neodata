@@ -1,24 +1,37 @@
-import { Link } from 'react-router-dom';
-import logo from '../assets/neodata.png'; // Importa a logo
-import '../styles/Navbar.css'; // Importa os estilos da navbar
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import logo from "../assets/neodata.png";
+import "../styles/Navbar.css";
 
 export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <nav>
-      {/* Adicionando a logo */}
-      <Link to="/">
-        <img src={logo} alt="NeoData Solutions" className="logo" id="logo"/>
+      <Link to="/" onClick={closeMenu}>
+        <img src={logo} alt="NeoData Solutions" className="logo" id="logo" />
       </Link>
 
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">Sobre Nós</Link></li>
-        <li><Link to="/services">Serviços</Link></li>
-        <li><Link to="/clients">Clientes</Link></li>
-        <li><Link to="/blog">Blog</Link></li>
-        <li><Link to="/contact">Contato</Link></li>
-        <li><Link to="/client-portal">Portal do Cliente</Link></li>
-        {/*<li><Link to="/employee-portal">Portal do Funcionário</Link></li>*/}
+      <div className={`hamburger ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
+        ☰
+      </div>
+
+      <ul className={menuOpen ? "open" : ""}>
+        <li><Link to="/" onClick={closeMenu}>Home</Link></li>
+        <li><Link to="/about" onClick={closeMenu}>Sobre Nós</Link></li>
+        <li><Link to="/services" onClick={closeMenu}>Serviços</Link></li>
+        <li><Link to="/clients" onClick={closeMenu}>Clientes</Link></li>
+        <li><Link to="/blog" onClick={closeMenu}>Blog</Link></li>
+        <li><Link to="/contact" onClick={closeMenu}>Contato</Link></li>
+        <li><Link to="/client-portal" onClick={closeMenu}>Portal do Cliente</Link></li>
       </ul>
     </nav>
   );

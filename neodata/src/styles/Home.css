@@ -12,11 +12,14 @@ section {
     margin-top: 20px;
   }
   
-  .carrossel img{
-    max-width: 40vw;
-    height: 200px;
+  .carousel img{
+    width: 100%;
+    margin-left: 0;
   }
 
-  .carousel img{
-    width: 37vw;
+  @media (max-width: 768px) {
+  .carousel img{ 
+      width: 100%; 
+    }
   }
+  

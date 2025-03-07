@@ -1,5 +1,4 @@
 section {
-  max-width: 800px;
   margin: 0 auto;
   padding: 20px;
   font-family: Arial, sans-serif;
@@ -34,4 +33,19 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  section {
+    padding: 15px;
+  }
+
+  article {
+    margin: 15px 0;
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Ajuste do tamanho do título */
+  }
 }

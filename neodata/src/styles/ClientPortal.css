@@ -1,16 +1,31 @@
-/* Blog.css */
 section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section ul {
+  width: 80%;
+  margin-top: 20px;
+}
+
+section li {
+  margin-bottom: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
   section ul {
+    width: 90%; /* Reduz o tamanho da lista para telas menores */
+  }
+}
+
+@media (max-width: 425px) {
+  section ul {
+    width: 90%; /* Reduz o tamanho da lista para telas menores */
+  }
+
+   ul li{
     width: 80%;
-    margin-top: 20px;
   }
-  
-  section li {
-    margin-bottom: 10px;
-  }
-  
+}

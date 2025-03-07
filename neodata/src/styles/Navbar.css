@@ -1,4 +1,4 @@
-/* Estiliza a navbar */
+/* Estilos básicos */
 nav {
   display: flex;
   align-items: center;
@@ -9,7 +9,6 @@ nav {
 
 .logo {
   width: 250px;
-  height: inherit; /* Ajuste o tamanho da logo conforme necessário */
 }
 
 nav ul {
@@ -29,4 +28,38 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #007bff;
+}
+
+/* Estilos para o menu hamburguer */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #000;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul.open {
+    display: flex;
+  }
+
+  nav ul li {
+    padding: 10px;
+  }
 }

@@ -16,7 +16,7 @@
   }
 
   .main-container {
-    width: 60vw;
+    width: 100vw;
     padding-bottom: 60px; /* Garante que o footer não cubra os artigos */
   }
   
@@ -33,7 +33,7 @@
   section {
     padding: 20px;
     margin: 20px;
-    width: 80vw;
+    width: 100vw;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);

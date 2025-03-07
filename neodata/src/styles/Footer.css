@@ -1,10 +1,33 @@
-/* Footer.css */
 footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+  height: 4%;
   background: #333;
   color: white;
   text-align: center;
-  padding: 10px 0;
+  padding-bottom: 10px;
 }
+
+/* Responsividade */
+@media (max-width: 1440px) {
+  footer {
+    padding-bottom: 5px; /* Reduz o padding em telas menores */
+    height: 7%;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 5px; /* Reduz o padding em telas menores */
+    height: 7%;
+  }
+}
+
+@media (max-width: 375px) {
+  footer {
+    padding: 5px; /* Reduz o padding em telas menores */
+    height: 10%;
+  }
+}
+
