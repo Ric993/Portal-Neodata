@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1f8d1f0e.css",
+    "main.js": "/static/js/main.1a727e6e.js",
+    "static/js/453.da4ed14d.chunk.js": "/static/js/453.da4ed14d.chunk.js",
+    "static/media/banner3.jpg": "/static/media/banner3.dd7a49498e6c11d101bd.jpg",
+    "static/media/banner2.jpg": "/static/media/banner2.dba655b18de73f48c09a.jpg",
+    "static/media/banner1.jpg": "/static/media/banner1.6547468616237367bc46.jpg",
+    "static/media/ricardo.jpg": "/static/media/ricardo.5649a2af030763b10091.jpg",
+    "static/media/mariana.jpg": "/static/media/mariana.522ed9c6eb8a2d9f7bb1.jpg",
+    "static/media/juliana.jpg": "/static/media/juliana.641a916c5d1ecde39160.jpg",
+    "static/media/paulo.jpg": "/static/media/paulo.c443b38b9938acfc4feb.jpg",
+    "static/media/fernanda.jpg": "/static/media/fernanda.388adeb11e4ed5879b41.jpg",
+    "static/media/ana.jpg": "/static/media/ana.f59d5a150788e0ff5a72.jpg",
+    "static/media/lucas.jpg": "/static/media/lucas.d5afad669fc1a2355143.jpg",
+    "static/media/joao.jpg": "/static/media/joao.a060db8f9b4c23bebb91.jpg",
+    "static/media/empresax.png": "/static/media/empresax.f557017ac8b340268eb7.png",
+    "static/media/empresay.png": "/static/media/empresay.41f31a6019fc0f08f82a.png",
+    "static/media/neodata.png": "/static/media/neodata.add81c33b30a789582ab.png",
+    "index.html": "/index.html",
+    "main.1f8d1f0e.css.map": "/static/css/main.1f8d1f0e.css.map",
+    "main.1a727e6e.js.map": "/static/js/main.1a727e6e.js.map",
+    "453.da4ed14d.chunk.js.map": "/static/js/453.da4ed14d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1f8d1f0e.css",
+    "static/js/main.1a727e6e.js"
+  ]
+}
